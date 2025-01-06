@@ -1,0 +1,17 @@
+{
+  "name": "test-jest",
+  "packageManager": "yarn@4.6.0",
+  "type": "module",
+  "scripts": {
+    "g:test": "cd \"$INIT_CWD\" && company-scripts"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/client",
+      "packages/company-scripts"
+    ]
+  },
+  "dependencies": {
+    "company-scripts": "workspace:*"
+  }
+}
