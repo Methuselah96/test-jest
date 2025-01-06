@@ -3,11 +3,10 @@
   "packageManager": "yarn@4.6.0",
   "type": "module",
   "scripts": {
-    "test": "node run-tests.js"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
   }
