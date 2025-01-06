@@ -3,15 +3,12 @@
   "packageManager": "yarn@4.6.0",
   "type": "module",
   "scripts": {
-    "g:test": "cd \"$INIT_CWD\" && company-scripts"
+    "test": "node run-tests.js"
   },
-  "workspaces": {
-    "packages": [
-      "packages/client",
-      "packages/company-scripts"
-    ]
-  },
-  "dependencies": {
-    "company-scripts": "workspace:*"
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
   }
 }

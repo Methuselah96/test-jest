@@ -2104,12 +2104,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client@workspace:packages/client":
-  version: 0.0.0-use.local
-  resolution: "client@workspace:packages/client"
-  languageName: unknown
-  linkType: soft
-
 "cliui@npm:^8.0.1":
   version: 8.0.1
   resolution: "cliui@npm:8.0.1"
@@ -2150,19 +2144,6 @@ __metadata:
   checksum: 10c0/a1a3f914156960902f46f7f56bc62effc6c94e84b2cae157a526b1c1f74b677a47ec602bf68a61abfa2b42d15b7c5651c6dbe72a43af720bc588dff885b10f95
   languageName: node
   linkType: hard
-
-"company-scripts@workspace:*, company-scripts@workspace:packages/company-scripts":
-  version: 0.0.0-use.local
-  resolution: "company-scripts@workspace:packages/company-scripts"
-  dependencies:
-    "@babel/core": "npm:^7.26.0"
-    "@babel/preset-env": "npm:^7.26.0"
-    babel-jest: "npm:^29.7.0"
-    jest: "npm:^29.7.0"
-  bin:
-    company-scripts: ./run-tests.js
-  languageName: unknown
-  linkType: soft
 
 "concat-map@npm:0.0.1":
   version: 0.0.1
@@ -4215,7 +4196,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test-jest@workspace:."
   dependencies:
-    company-scripts: "workspace:*"
+    "@babel/core": "npm:^7.26.0"
+    "@babel/preset-env": "npm:^7.26.0"
+    babel-jest: "npm:^29.7.0"
+    jest: "npm:^29.7.0"
   languageName: unknown
   linkType: soft
 
